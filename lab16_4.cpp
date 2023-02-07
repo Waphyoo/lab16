@@ -17,3 +17,30 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int x=a,z=c,v=d;
+	int n=rand()%4;
+	switch (n){
+		case 0 : 
+		a=b;
+		b=x;
+		break;
+		case 1 :
+		c=v;
+		d=z;
+		break;
+		case 2 :
+		c=x;
+		a=z;
+		break;
+		case 3:
+		a=b;
+		b=x;
+		c=v;
+		d=z;
+		break;
+
+	}
+
+}
